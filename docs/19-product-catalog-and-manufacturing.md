@@ -53,6 +53,26 @@
 
 ---
 
+## 19.3.1 محصولات صادراتی و شرایط پرداخت (T/T)
+
+هر محصول/دسته در کاتالوگ باید `payment_term` داشته باشد تا در Quotation و PI خودکار اعمال شود. جزئیات کامل: [C3](./commerce/03-export-sales-procedure.md)
+
+| دسته محصول | شرایط پرداخت |
+|------------|--------------|
+| Base Oil Recycled | ۲۰٪ Advance / ۸۰٪ Balance |
+| Bitumen | ۲۰٪ Advance / ۸۰٪ Balance |
+| Caustic Soda | ۲۰٪ Advance / ۸۰٪ Balance |
+| Urea | ۲۰٪ Advance / ۸۰٪ Balance |
+| Sulphur | ۱۰۰٪ Advance |
+| Base Oil Virgin | ۱۰۰٪ Advance |
+| LPG | ۱۰۰٪ Advance |
+| Polymers | ۱۰۰٪ Advance |
+| Glycols | ۱۰۰٪ Advance |
+
+مسیر فروش این محصولات از کاتالوگ وارد **Export Sales Procedure** می‌شود (Inquiry → … → Shipping Documents)، سپس خرید و لجستیک.
+
+---
+
 ## 19.4 نیازمندی‌های عملکردی
 
 ### 19.4.1 کاتالوگ محصولات (مشتری)

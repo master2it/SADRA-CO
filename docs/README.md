@@ -1,34 +1,38 @@
 # 📚 مستندات پروژه SADRA
 
-## پلتفرم بین‌المللی حمل‌ونقل بار — فاز ۱ (MVP)
+## پلتفرم زنجیره تامین صادراتی — فاز ۱ (MVP)
 
-**نسخه:** 2.1 | **تاریخ:** ۳۱ مرداد ۱۴۰۵ | **وضعیت:** پیش‌نویس نهایی
+**نسخه:** 3.0 | **وضعیت:** پیش‌نویس نهایی
+
+---
+
+## ماهیت پروژه
+
+SADRA یک سیستم **زنجیره تامین (Supply Chain)** است که فروش صادراتی، تدارکات/خرید، تولید و لجستیک را پوشش می‌دهد.
+
+```
+فروش (Export Sales) → خرید/تدارکات → حمل (Logistics) → تحویل
+```
+
+چارچوب استاندارد: **SCOR** — [docs/20-supply-chain-scor.md](./20-supply-chain-scor.md)
 
 ---
 
 ## ساختار داکیومنت‌ها
 
-مستندات SADRA در **دو دسته اصلی** سازمان‌دهی شده‌اند:
-
 | دسته | توضیح | فهرست |
 |------|-------|-------|
-| 🚛 **لجستیک** | حمل‌ونقل، بارگیری، GPS، راننده، مسیر، ۱۹ فرایند | [logistics/README.md](./logistics/README.md) |
-| 💼 **بازرگانی** | CRM، SRM، AI، کاتالوگ، پیش‌فاکتور، کارخانه | [commerce/README.md](./commerce/README.md) |
+| 🔗 **زنجیره تامین** | مدل SCOR، جریان End-to-End | [20-supply-chain-scor.md](./20-supply-chain-scor.md) |
+| 💼 **بازرگانی** | فروش صادراتی، CRM، کاتالوگ، پرداخت | [commerce/README.md](./commerce/README.md) |
+| 🚛 **لجستیک** | حمل، بارگیری، GPS، ۱۹ فرایند | [logistics/README.md](./logistics/README.md) |
 
 ---
 
-## 🚛 لجستیک (Logistics)
+## 🔗 زنجیره تامین (اصلی)
 
 | # | عنوان | فایل |
 |---|-------|------|
-| **L1** | **۱۹ فرایند بارگیری و حمل** | [logistics/01-shipment-loading-processes.md](./logistics/01-shipment-loading-processes.md) |
-| L2 | نیازمندی‌های وب (حمل، مسیر، Provider) | [06-functional-requirements-web.md](./06-functional-requirements-web.md) |
-| L3 | اپلیکیشن راننده | [07-functional-requirements-driver-app.md](./07-functional-requirements-driver-app.md) |
-| L4 | مدل داده | [08-data-model.md](./08-data-model.md) |
-| L5 | سفر کاربر | [09-user-journey.md](./09-user-journey.md) |
-| L6 | صفحات و UX | [10-pages-and-ux.md](./10-pages-and-ux.md) |
-| L7 | استراتژی SEO | [11-seo-strategy.md](./11-seo-strategy.md) |
-| L8 | قابلیت‌های MVP | [12-mvp-features.md](./12-mvp-features.md) |
+| **SCOR** | مدل زنجیره تامین + نگاشت ماژول‌ها | [20-supply-chain-scor.md](./20-supply-chain-scor.md) |
 
 ---
 
@@ -36,8 +40,31 @@
 
 | # | عنوان | فایل |
 |---|-------|------|
+| **C3** | پروسیجر فروش صادراتی (۱۱ مرحله) + شرایط پرداخت | [commerce/03-export-sales-procedure.md](./commerce/03-export-sales-procedure.md) |
 | **C1** | CRM، SRM و دستیار AI | [18-crm-srm-ai-assistant.md](./18-crm-srm-ai-assistant.md) |
 | **C2** | کاتالوگ محصولات و تولید کارخانه‌ای | [19-product-catalog-and-manufacturing.md](./19-product-catalog-and-manufacturing.md) |
+
+### شرایط پرداخت (خلاصه)
+
+| نوع | محصولات |
+|-----|---------|
+| ۲۰٪ Advance / ۸۰٪ Balance | Base Oil Recycled، Bitumen، Caustic Soda، Urea |
+| ۱۰۰٪ Advance | Sulphur، Base Oil Virgin، LPG، Polymers، Glycols |
+
+---
+
+## 🚛 لجستیک (Logistics)
+
+| # | عنوان | فایل |
+|---|-------|------|
+| **L1** | ۱۹ فرایند بارگیری و حمل | [logistics/01-shipment-loading-processes.md](./logistics/01-shipment-loading-processes.md) |
+| L2 | نیازمندی‌های وب | [06-functional-requirements-web.md](./06-functional-requirements-web.md) |
+| L3 | اپلیکیشن راننده | [07-functional-requirements-driver-app.md](./07-functional-requirements-driver-app.md) |
+| L4 | مدل داده | [08-data-model.md](./08-data-model.md) |
+| L5 | سفر کاربر | [09-user-journey.md](./09-user-journey.md) |
+| L6 | صفحات و UX | [10-pages-and-ux.md](./10-pages-and-ux.md) |
+| L7 | استراتژی SEO | [11-seo-strategy.md](./11-seo-strategy.md) |
+| L8 | قابلیت‌های MVP | [12-mvp-features.md](./12-mvp-features.md) |
 
 ---
 
@@ -59,31 +86,14 @@
 
 ---
 
-## ترتیب مطالعه
-
-### تیم لجستیک
-```
-01 → 04 → 05 → L1 (۱۹ فرایند) → 08 → L2/L3 → L5 → 16
-```
-
-### تیم بازرگانی
-```
-01 → 02 → C1 → C2 → 16
-```
-
----
-
-## ساختار پروژه
+## ترتیب مطالعه پیشنهادی
 
 ```
-sadra/
-├── apps/
-│   ├── web/              # Next.js — وب (لجستیک + بازرگانی)
-│   ├── api/              # NestJS — Backend
-│   └── driver-app/       # Flutter — اپ راننده (لجستیک)
-├── docs/
-│   ├── logistics/        # 🚛 داکیومنت‌های لجستیک
-│   ├── commerce/         # 💼 داکیومنت‌های بازرگانی
-│   └── ...               # مشترک
-└── infrastructure/
+01 → 20 (SCOR) → C3 (فروش صادراتی) → C2 → C1 → L1 (لجستیک) → 08 → 16
 ```
+
+1. چشم‌انداز و مدل زنجیره تامین
+2. پروسیجر فروش صادراتی (۱۱ مرحله)
+3. کاتالوگ و CRM
+4. ۱۹ فرایند لجستیک
+5. مدل داده و معیار پذیرش

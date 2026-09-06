@@ -89,6 +89,8 @@
 
 ### 18.4.2 چرخه عمر Lead (Pipeline)
 
+CRM Leadها را تا ورود به **Export Sales** نگه می‌دارد. پس از تبدیل، سفارش وارد پروسیجر ۱۱ مرحله‌ای فروش صادراتی می‌شود — جزئیات: [C3](./commerce/03-export-sales-procedure.md)
+
 ```
 جدید (New)
   ↓
@@ -96,13 +98,13 @@
   ↓
 واجد شرایط (Qualified)
   ↓
-استعلام نرخ (Quote Sent)
+Inquiry / Quotation (شروع C3)   ← AI می‌تواند کمک کند
   ↓
-مذاکره (Negotiation)
+LOI → PI → Confirm PI
   ↓
-پیش‌فاکتور (Proforma Issued)  ← AI می‌تواند تا اینجا برساند
+Sales Contract                   ← اپراتور تایید نهایی
   ↓
-قرارداد (Contract)             ← اپراتور تایید نهایی
+Advance Payment → … → Shipping Documents
   ↓
 برنده (Won) / از دست رفته (Lost)
 ```

@@ -536,3 +536,28 @@ ShipmentProcessEvent
 ```
 
 > جزئیات کامل: [logistics/L1](./logistics/01-shipment-loading-processes.md)
+
+---
+
+## 8.5 موجودیت‌های فروش صادراتی و تدارکات
+
+```
+ExportSalesOrder
+├── status: inquiry → … → shipping_documents → completed
+├── payment_term: advance_20_balance_80 | advance_100
+├── product_category, quantity, destination_port, delivery_terms
+├── shipment_request_id (لینک به لجستیک)
+
+ExportSalesPayment
+├── payment_type: advance | balance
+├── swift_reference, status: pending | verified
+
+ProcurementOrder
+├── export_order_id, factory_id
+├── status: draft → ready_for_loading
+
+ProductPaymentTerms
+├── product_category → advance_percent
+```
+
+> جزئیات کامل: [commerce/C3](./commerce/03-export-sales-procedure.md) | [SCOR](./20-supply-chain-scor.md)

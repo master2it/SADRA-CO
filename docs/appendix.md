@@ -58,15 +58,29 @@
 
 | واژه | معنی |
 |------|------|
-| **Shipper** | صاحب بار / مشتری |
-| **Provider / Carrier** | شرکت حمل / تامین‌کننده خدمات |
+| **Shipper** | صاحب بار / مشتری / Buyer |
+| **Buyer** | خریدار صادراتی |
+| **Seller** | فروشنده (SADRA) |
+| **Provider / Carrier** | شرکت حمل / تامین‌کننده خدمات حمل |
+| **Inquiry** | استعلام رسمی خریدار |
+| **Quotation** | پیشنهاد قیمت فروشنده |
+| **LOI** | Letter of Intent — نامه قصد خرید |
+| **PI / Proforma Invoice** | پیش‌فاکتور |
+| **Sales Contract** | قرارداد فروش |
+| **T/T** | Telegraphic Transfer — حواله بانکی |
+| **SWIFT** | تأییدیه انتقال بانکی بین‌المللی |
+| **B/L** | Bill of Lading — بارنامه |
+| **COO** | Certificate of Origin — گواهی مبدأ |
+| **SCOR** | Supply Chain Operations Reference |
+| **Plan / Source / Make / Deliver / Return / Enable** | شش فرایند اصلی SCOR |
+| **Procurement** | تدارکات / خرید |
 | **Rate Board** | تابلو نرخ |
 | **Backhaul** | بار برگشت |
 | **POD (Proof of Delivery)** | رسید تحویل |
-| **CMR** | بارنامه بین‌المللی |
+| **CMR** | بارنامه بین‌المللی جاده‌ای |
 | **ETA** | زمان تقریبی رسیدن |
-| **LTL** | Less than Truckload (بار کمتر از ظرفیت کامیون) |
-| **FTL** | Full Truckload (بار کامل کامیون) |
+| **LTL** | Less than Truckload |
+| **FTL** | Full Truckload |
 | **SRS** | Software Requirements Specification |
 | **MVP** | Minimum Viable Product |
 | **KPI** | Key Performance Indicator |
@@ -76,7 +90,6 @@
 | **JWT** | JSON Web Token |
 | **OTP** | One-Time Password |
 | **FCM** | Firebase Cloud Messaging |
-| **POD** | Proof of Delivery |
 | **WCAG** | Web Content Accessibility Guidelines |
 
 ---

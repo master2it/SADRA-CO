@@ -59,10 +59,12 @@
 | **CRM** | مدیریت Lead، Pipeline فروش، SLA، کانال‌های ورودی |
 | **SRM** | مدیریت تامین‌کننده، Onboarding، عملکرد Provider |
 | **AI** | دستیار هوشمند، چت، پیش‌فاکتور، handoff به اپراتور |
-| **Product** | کاتالوگ، سفارش تولید | [commerce](../commerce/README.md) |
-| **Process** | ۱۹ فرایند بارگیری | [logistics/L1](../logistics/01-shipment-loading-processes.md) |
+| **Product** | کاتالوگ، سفارش تولید | [commerce](./commerce/README.md) |
+| **ExportSales** | ۱۱ مرحله فروش صادراتی + پرداخت | [commerce/C3](./commerce/03-export-sales-procedure.md) |
+| **Procurement** | تدارکات / خرید از کارخانه | [SCOR](./20-supply-chain-scor.md) |
+| **Process** | ۱۹ فرایند بارگیری | [logistics/L1](./logistics/01-shipment-loading-processes.md) |
 
-> جزئیات CRM/SRM/AI: [commerce/C1](../18-crm-srm-ai-assistant.md) | کاتالوگ: [commerce/C2](../19-product-catalog-and-manufacturing.md) | فرایندها: [logistics/L1](../logistics/01-shipment-loading-processes.md)
+> جزئیات CRM/SRM/AI: [commerce/C1](./18-crm-srm-ai-assistant.md) | کاتالوگ: [commerce/C2](./19-product-catalog-and-manufacturing.md) | فروش صادراتی: [C3](./commerce/03-export-sales-procedure.md) | SCOR: [20](./20-supply-chain-scor.md) | فرایندها: [logistics/L1](./logistics/01-shipment-loading-processes.md)
 
 ---
 

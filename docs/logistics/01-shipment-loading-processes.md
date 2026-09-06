@@ -15,6 +15,17 @@
 
 > این فرایندها جایگزین پیگیری تلفنی و کاغذی می‌شوند.
 
+### نقطه شروع در زنجیره تامین
+
+لجستیک معمولاً پس از **مرحله ۸ فروش صادراتی (Payment Confirmation)** و آماده‌سازی کالا در تدارکات شروع می‌شود:
+
+```
+Export Sales (C3: 01–08) → Procurement/Make → L1 (۱۹ فرایند) → C3: 09–11 (Shipment + Docs)
+```
+
+جزئیات فروش: [commerce/03-export-sales-procedure.md](../commerce/03-export-sales-procedure.md)  
+مدل SCOR: [20-supply-chain-scor.md](../20-supply-chain-scor.md)
+
 ---
 
 ## L1.2 نمای کلی ۱۹ فرایند
